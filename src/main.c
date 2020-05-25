@@ -1,12 +1,12 @@
 #include "mgos.h"
 
-int uart_no = 0;
+int uart_no = 1;
 
 static void timer_cb(void *arg)
 {
     // Repeating code goes here.
     if(mgos_uart_write_avail(uart_no)) {
-        mgos_uart_write(uart_no, "Hello World", 11);
+        mgos_uart_write(uart_no, "Hello World\n", 12);
     }
     (void)arg;
 }
