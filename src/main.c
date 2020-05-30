@@ -2,7 +2,24 @@
 
 int uart_no = 1;
 
-static void timer_cb(void *arg)
+
+/*! \mainpage UART out doc
+ *
+ * \section Documentation
+ *
+ * Add some intro to docs:
+ *
+ * \section install_sec Steps to install:
+ *
+ * \subsection step1 Step 1: Opening the box
+ *
+ * etc...
+ */
+
+
+
+/**> function write to UART. */
+void timer_cb(void *arg)
 {
     // Repeating code goes here.
     if(mgos_uart_write_avail(uart_no)) {
@@ -11,6 +28,7 @@ static void timer_cb(void *arg)
     (void)arg;
 }
 
+/**> MongooseOS initialization function to setup UART. */
 enum mgos_app_init_result mgos_app_init(void)
 {
     LOG(LL_INFO, ("Preparing UART interface"));
