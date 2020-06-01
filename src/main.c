@@ -3,18 +3,14 @@
 int uart_no = 1;
 
 
-/*! \mainpage UART out doc
+
+/*! \mainpage UART OUT doc
  *
  * \section Documentation
  *
- * Add some intro to docs:
- *
- * \section install_sec Steps to install:
- *
- * \subsection step1 Step 1: Opening the box
- *
- * etc...
+ * This a test app that sends data over UART port for ESP32.
  */
+
 
 
 
